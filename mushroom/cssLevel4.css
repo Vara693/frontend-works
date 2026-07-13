@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+#container{
+    border: 2px solid black;
+    height: 200px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+}
+
+#box1{
+    background-color: red;
+}
+
+#box2{
+    background-color: pink;
+}
+
+#box3{
+    background-color: blue;
+}
+
+#box4{
+    background-color: rgba(255, 0, 169, 0.7);
+}

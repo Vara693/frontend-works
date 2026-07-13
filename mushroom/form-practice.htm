@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <h1>User Registration Form</h1>
+        <p>Practice page for HTML Forms & Inputs</p>
+        <hr>
+    </header>
+
+    <main>
+
+        <form action="#" method="post">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Gender Selection -->
+            <fieldset>
+                <legend>Gender</legend>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Skills Selection -->
+            <fieldset>
+                <legend>Skills</legend>
+
+                <input type="checkbox" id="cpp" name="skills" value="cpp">
+                <label for="cpp">C/C++</label><br>
+
+                <input type="checkbox" id="python" name="skills" value="python">
+                <label for="python">Python</label><br>
+
+                <input type="checkbox" id="js" name="skills" value="javascript">
+                <label for="js">JavaScript</label><br>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Additional Details -->
+            <fieldset>
+                <legend>Additional Details</legend>
+
+                <label for="experience">Years of Experience:</label><br>
+                <input type="number" id="experience" name="experience" min="0" max="50"><br><br>
+
+                <label for="website">Portfolio Website:</label><br>
+                <input type="url" id="website" name="website"><br><br>
+
+                <label for="resume">Upload Resume:</label><br>
+                <input type="file" id="resume" name="resume"><br><br>
+
+                <label for="bio">Short Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="40"></textarea><br><br>
+
+                <label for="role">Preferred Role:</label><br>
+                <select id="role" name="role">
+                    <option value="">--Select Role--</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="fullstack">Fullstack Developer</option>
+                    <option value="security">Cybersecurity Engineer</option>
+                </select>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Terms & Submit -->
+            <fieldset>
+                <legend>Confirmation</legend>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label><br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>© 2026 Form Practice Page</p>
+    </footer>
+
+</body>
+</html>

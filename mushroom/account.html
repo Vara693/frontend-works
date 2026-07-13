@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | The Fungi Forest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">🍄 FungiForest</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+
+    <section id="account-content">
+        <h2>Your FungiForest Account</h2>
+        <div class="form-box" id="authBox">
+            <h3 id="authTitle" style="color: var(--forest-green); text-align: center; margin-bottom: 20px;">Sign In</h3>
+            <div id="registerFields" style="display: none;">
+                <input type="email" id="regEmail" placeholder="Email Address" required>
+            </div>
+            <input type="tel" id="userPhone" placeholder="Phone Number (e.g., +1234567890)" required>
+            <input type="password" id="userPass" placeholder="Password" required>
+            <button id="authBtn" onclick="handleAuth()">Login</button>
+            <p style="text-align:center; margin-top:10px; font-size: 0.9rem;">
+                <a href="javascript:void(0)" onclick="toggleAuth()" id="toggleAuthLink">New here? Register instead.</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 FungiForest Local Seller. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

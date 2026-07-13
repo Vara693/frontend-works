@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | The Fungi Forest</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for the shop page */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .product-image {
+            flex: 1 1 300px; /* Allows image to grow/shrink */
+            border-radius: 10px;
+            width: 100%; /* Ensure image fits container */
+            height: auto;
+            object-fit: cover;
+        }
+
+        .product-info {
+            flex: 1 1 300px; /* Allows info to grow/shrink */
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .product-info { padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">🍄 FungiForest</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+
+    <section id="shop-content">
+        <h2>Today's Harvest: Premium Oyster Mushrooms</h2>
+        <div class="product-container">
+            <img src="oyster-mushroom-product.png" alt="Fresh Oyster Mushroom" class="product-image"> <div class="product-info">
+                <h3>Our Signature Crop</h3>
+                <p>Discover the delicate flavor and velvety texture of our freshly harvested Oyster Mushrooms. Perfect for adding a gourmet touch to any meal.</p>
+                <ul style="margin-top: 15px; list-style-type: disc; margin-left: 20px;">
+                    <li>Locally Grown with Care</li>
+                    <li>Rich in Vitamins and Minerals</li>
+                    <li>Versatile in Cooking</li>
+                    <li>Always Fresh, Always Organic</li>
+                </ul>
+                <h4 style="margin-top: 30px; color: var(--forest-green);">Book Your Order</h4>
+                <form id="bookingForm" onsubmit="event.preventDefault(); handleBooking();">
+                    <input type="number" id="qty" placeholder="Quantity (kg)" min="1" required>
+                    <button type="submit">Place Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 FungiForest Local Seller. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
